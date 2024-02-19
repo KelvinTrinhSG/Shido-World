@@ -17,7 +17,7 @@ public class QuizManager : MonoBehaviour
     public Text ScoreTxt;
     int TotalQuestions = 0;
     public int score;
-    public const string ContractAddress = "0x14512A2eB546C811DC260Af09897434823e489Ee";
+    public const string ContractAddress = "0xE48DED2552efCD461CeE086Ba3434b7eE95D87ab";
     private Contract contract;
     public Text btnTxt;
     public Text claimBtnTxt;
@@ -38,7 +38,7 @@ public class QuizManager : MonoBehaviour
         ScoreTxt.text = score + "/" + TotalQuestions;
         if (score >= 10)
         {
-            claimBtnTxt.text = "Claim Silver Key";
+            claimBtnTxt.text = "Claim Silver Scroll";
             ClaimNFTPanel.SetActive(true);
         }
     }

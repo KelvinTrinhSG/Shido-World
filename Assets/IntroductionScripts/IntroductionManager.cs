@@ -19,9 +19,9 @@ public class IntroductionManager : MonoBehaviour
     public GameObject flappyBirdSceneBackButton;
     public GameObject bossFightingSceneNextButton;
     public GameObject bossFightingSceneBackButton;
-    public const string ContractAddress = "0x14512A2eB546C811DC260Af09897434823e489Ee";
+    public const string ContractAddress = "0xE48DED2552efCD461CeE086Ba3434b7eE95D87ab";
     private Contract contract;
-    public const string ContractAddressBossFighting = "0x813E5E41EDBC4CDFB4D539FE62dF9d4977eaFd3a";
+    public const string ContractAddressBossFighting = "0x4c953C8F4FFBA000f6be507c3bA46935B16D2C79";
     private Contract contractBossFighting;
 
     public void MoveToQuizScene()
@@ -72,31 +72,31 @@ public class IntroductionManager : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
     }
 
-    public void FlappyBirdGame()
-    {
-        SceneManager.LoadSceneAsync(2);
-    }
-    // public async void FlappyBirdGame()
+    // public void FlappyBirdGame()
     // {
-    //     contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
-    //     var results = await contract.ERC721.Balance();
-    //     if (int.Parse(results) >= 1)
-    //     {
-    //         SceneManager.LoadSceneAsync(2);
-    //     }
+    //     SceneManager.LoadSceneAsync(2);
     // }
-    public void BossFightingGame()
+    public async void FlappyBirdGame()
     {
-        SceneManager.LoadSceneAsync(3);
+        contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
+        var results = await contract.ERC721.Balance();
+        if (int.Parse(results) >= 1)
+        {
+            SceneManager.LoadSceneAsync(2);
+        }
     }
-    // public async void BossFightingGame()
+    // public void BossFightingGame()
     // {
-    //     contractBossFighting = ThirdwebManager.Instance.SDK.GetContract(ContractAddressBossFighting);
-    //     var results = await contractBossFighting.ERC721.Balance();
-    //     if (int.Parse(results) >= 1)
-    //     {
-    //         SceneManager.LoadSceneAsync(3);
-    //     }
+    //     SceneManager.LoadSceneAsync(3);
     // }
+    public async void BossFightingGame()
+    {
+        contractBossFighting = ThirdwebManager.Instance.SDK.GetContract(ContractAddressBossFighting);
+        var results = await contractBossFighting.ERC721.Balance();
+        if (int.Parse(results) >= 1)
+        {
+            SceneManager.LoadSceneAsync(3);
+        }
+    }
 
 }

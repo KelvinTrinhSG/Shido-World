@@ -7,12 +7,12 @@ using Thirdweb;
 
 public class NFTManager : MonoBehaviour
 {
-    public const string ContractAddress = "0xA9f52287BBbb8b459A824F188BA35662cf13D5b3";
+    public const string ContractAddress = "0x30eFF7929136Fa21e89c9FB3c547B46Dcf49E0C9";
     private Contract contract;
     public Text btnTxt;
     public Text claimBtnTxt;
     public GameObject ClaimButton;
-     public async void GetNFTBalance()
+    public async void GetNFTBalance()
     {
         btnTxt.text = "Getting balance...";
         contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
@@ -23,7 +23,7 @@ public class NFTManager : MonoBehaviour
     public async void ClaimNFT()
     {
         try
-        {            
+        {
             btnTxt.text = "Claiming NFT...";
             contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
             var results = await contract.ERC721.Claim(1);

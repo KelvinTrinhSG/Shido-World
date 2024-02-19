@@ -2,6 +2,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Thirdweb;
+using UnityEngine.SceneManagement;
 
 public class GameManagerDino : MonoBehaviour
 {
@@ -17,6 +19,14 @@ public class GameManagerDino : MonoBehaviour
     private PlayerDino player;
     private SpawnerDino spawner;
     private float score;
+
+    public GameObject ClaimNFTPanel;
+    public GameObject ClaimButton;
+    public const string ContractAddress = "0x4c953C8F4FFBA000f6be507c3bA46935B16D2C79";
+    private Contract contract;
+    public Text claimBtnTxt;
+    public Text btnTxt;
+    public GameObject ToMainGameButton;
 
     private void Awake()
     {
@@ -56,6 +66,9 @@ public class GameManagerDino : MonoBehaviour
         spawner.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(false);
         retryButton.gameObject.SetActive(false);
+        ClaimNFTPanel.SetActive(false);
+        ClaimButton.SetActive(false);
+        ToMainGameButton.SetActive(false);
         // UpdateHiScore();
     }
     public void GameOver()
@@ -66,6 +79,13 @@ public class GameManagerDino : MonoBehaviour
         spawner.gameObject.SetActive(false);
         gameOverText.gameObject.SetActive(true);
         retryButton.gameObject.SetActive(true);
+        ToMainGameButton.SetActive(true);
+        if (score >= 100)//10000
+        {
+            claimBtnTxt.text = "Claim Golden Scroll";
+            ClaimNFTPanel.SetActive(true);
+            ClaimButton.SetActive(true);
+        }
         // UpdateHiScore();
     }
     private void Update()
@@ -85,4 +105,39 @@ public class GameManagerDino : MonoBehaviour
     //     }
     //     hiscoreText.text = Mathf.FloorToInt(hiscore).ToString("D5");
     // }
+
+    public void BackToMainGame()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
+
+    public async void GetNFTBalance()
+    {
+        if (score >= 100)//10000
+        {
+            btnTxt.text = "Getting balance...";
+            contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
+            var results = await contract.ERC721.Balance();
+            btnTxt.text = results;
+        }
+    }
+
+    public async void ClaimNFT()
+    {
+        try
+        {
+            if (score >= 100)//10000
+            {
+                btnTxt.text = "Claiming NFT...";
+                contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
+                var results = await contract.ERC721.Claim(1);
+                btnTxt.text = "NFT Claimed!";
+                ClaimButton.SetActive(false);
+            }
+        }
+        catch (System.Exception)
+        {
+            Debug.Log("Error claiming NFT");
+        }
+    }
 }
