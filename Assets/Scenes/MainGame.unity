@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.058823533, g: 0.13725491, b: 0.18039216, a: 1}
+  m_Color: {r: 0.054901965, g: 0.11764707, b: 0.29411766, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.058823533, g: 0.13725491, b: 0.18039216, a: 1}
+  m_Color: {r: 0.054901965, g: 0.11764707, b: 0.29411766, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -905,82 +905,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Questions: What is the consensus protocol used by the Botanix protocol for its
-      decentralized chain?
+  - Questions: What key features does Shido Network combine?
     Answers:
-    - Proof-of-Work
-    - Byzantine Fault Tolerance
-    - Proof-of-Stake
-    - Delegated Proof-of-Stake
-    CorrectAnswer: 3
-  - Questions: What model does the Botanix protocol adopt for its decentralized chain?
-    Answers:
-    - Unspent Transaction Output (UTXO)
-    - Proof-of-Work
-    - Account-based, like Ethereum
-    - Byzantine Fault Tolerance
-    CorrectAnswer: 3
-  - Questions: What is the primary reason behind Botanix's choice of Bitcoin as the
-      base layer for its protocol?
-    Answers:
-    - Bitcoin's support for Turing complete programming languages
-    - Bitcoin's focus on speed and efficiency
-    - Bitcoin's reputation as the most decentralized and secure blockchain
-    - Bitcoin's compatibility with Ethereum Virtual Machine (EVM)
-    CorrectAnswer: 3
-  - Questions: What aspect of Botanix's design differentiates it from traditional
-      Bitcoin architecture?
-    Answers:
-    - Use of Proof-of-Work consensus
-    - Adoption of the UTXO model
-    - ' Integration of the Ethereum Virtual Machine'
-    - Reliance on a federated multisig approach
-    CorrectAnswer: 3
-  - Questions: How does Botanix address the scalability challenge faced by Bitcoin?
-    Answers:
-    - By implementing a multi-chain world theory
-    - ' Through the use of state channels like the Lightning Network'
-    - By introducing a new smart contract programming language
-    - With a Proof-of-Stake consensus model
+    - Proof-of-Work and Tendermint
+    - Interoperability of Cosmos, development power of EVM and WASM
+    - Centralized governance and unlimited scalability
+    - Sharding and Plasma protocols
     CorrectAnswer: 2
-  - Questions: 'What is the main focus of Botanix''s design, as mentioned in the
-      WhitePaper? '
+  - Questions: How is Shido Network's scalability achieved?
     Answers:
-    - Optimizing smart contract execution
-    - Addressing the scalability challenge in Bitcoin
-    - Enhancing privacy features for transactions
-    - Developing a new consensus algorithm
-    CorrectAnswer: 2
-  - Questions: What role does the Ethereum Virtual Machine (EVM) play in Botanix's
-      protocol?
-    Answers:
-    - It serves as the base layer for the blockchain
-    - It enables the execution of smart contracts
-    - ' It provides consensus for transaction validation'
-    - It facilitates cross-chain interoperability
-    CorrectAnswer: 2
-  - Questions: How does Botanix handle the issue of scalability in blockchain networks?
-    Answers:
-    - By implementing a multi-chain world theory
+    - By limiting the number of transactions per block
     - Through the use of Proof-of-Work consensus mechanism
-    - By building layered chains on top of each other
-    - With the integration of federated multisigs
+    - Infinitely scalable horizontally and vertically
+    - By restricting the number of active nodes
     CorrectAnswer: 3
-  - Questions: 'What consensus model does Botanix adopt for its protocol? '
+  - Questions: What is the main advantage of Shido Network's Carbon Neutral Program?
     Answers:
-    - Proof-of-Stake (PoS)
-    - Byzantine Fault Tolerance (BFT)
-    - Proof-of-Work (PoW)
-    - Delegated Proof-of-Stake (DPoS)
-    CorrectAnswer: 1
-  - Questions: What is Botanix's approach to achieving decentralization and security
-      in its protocol?
+    - ' It allows for faster transaction processing'
+    - It ensures Shido's impact on the environment is reduced to zero
+    - ' It increases the value of Shido''s native token'
+    - It enables Shido to achieve higher levels of decentralization
+    CorrectAnswer: 2
+  - Questions: What is Shidoscan?
     Answers:
-    - By relying solely on a centralized authority
-    - Through the use of complex cryptographic algorithms
-    - By building a layered approach on top of Bitcoin
-    - By incorporating multiple layer 1 chains for optimization
+    - A decentralized exchange built on Shido Network
+    - A protocol for generating stablecoins on Shido Network
+    - A blockchain scanner for navigating the Shido Network
+    - ' A consensus algorithm used by Shido Network'
     CorrectAnswer: 3
+  - Questions: What is the primary function of Shido IDE?
+    Answers:
+    - To mine new Shido tokens
+    - To explore the Shido Network ecosystem
+    - To develop decentralized applications on Shido Network
+    - To stake SHIDO tokens for rewards
+    CorrectAnswer: 3
+  - Questions: How does Shido Stablecoin differ from traditional stablecoins?
+    Answers:
+    - It is backed by a single collateral asset
+    - It is decentralized and over-collateralized
+    - ' It is pegged to the value of gold'
+    - It is only available on centralized exchanges
+    CorrectAnswer: 2
+  - Questions: What role does SHIDO token play in the Shido Ecosystem?
+    Answers:
+    - It is used as a medium of exchange for stablecoin transactions
+    - It is a governance token and collateral asset for Shido Stablecoin
+    - It is exclusively used for mining new blocks on Shido Network
+    - ' It is a stablecoin backed by multi-chain assets'
+    CorrectAnswer: 2
+  - Questions: How does Shido Stablecoin Protocol ensure price stability?
+    Answers:
+    - By pegging it to the value of Bitcoin
+    - Through the use of Proof-of-Stake consensus mechanism
+    - By over-collateralizing debt positions and using risk management mechanisms
+    - By relying on centralized price feeds
+    CorrectAnswer: 3
+  - Questions: How does the Shido Network contribute to environmental sustainability?
+    Answers:
+    - By promoting excessive energy consumption through mining
+    - By offsetting its carbon footprint with the Shido Carbon Neutral Program
+    - By relying solely on centralized servers for transaction processing
+    - By disregarding environmental concerns in favor of network speed
+    CorrectAnswer: 2
+  - Questions: What programming languages are supported by Shido Network for smart
+      contract development?
+    Answers:
+    - Java and Swift
+    - Solidity and Vyper
+    - PHP and Ruby
+    - HTML and CSS
+    CorrectAnswer: 2
   options:
   - {fileID: 696987510}
   - {fileID: 1831058041}
@@ -1079,7 +1074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.70388687, b: 0, a: 1}
+  m_Color: {r: 0.3372549, g: 0.9450981, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2249,7 +2244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.058823533, g: 0.13725491, b: 0.18039216, a: 1}
+  m_Color: {r: 0.054901965, g: 0.11764707, b: 0.29411766, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2788,8 +2783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 688, y: 356}
-  m_SizeDelta: {x: 79.658, y: -79.701}
+  m_AnchoredPosition: {x: -409, y: 195}
+  m_SizeDelta: {x: 1075.99, y: 598.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2058831567
 MonoBehaviour:
@@ -2811,7 +2806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c369647f3b409214f8b6d1b6af90f7da, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bf1eef0f7b24564a8bc3050203fa922, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3066,7 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.058823533, g: 0.13725491, b: 0.18039216, a: 1}
+  m_Color: {r: 0.054901965, g: 0.11764707, b: 0.29411766, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

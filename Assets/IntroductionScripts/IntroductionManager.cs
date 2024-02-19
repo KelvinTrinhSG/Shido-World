@@ -71,23 +71,32 @@ public class IntroductionManager : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
-    public async void FlappyBirdGame()
+
+    public void FlappyBirdGame()
     {
-        contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
-        var results = await contract.ERC721.Balance();
-        if (int.Parse(results) >= 1)
-        {
-            SceneManager.LoadSceneAsync(2);
-        }
+        SceneManager.LoadSceneAsync(2);
     }
-    public async void BossFightingGame()
+    // public async void FlappyBirdGame()
+    // {
+    //     contract = ThirdwebManager.Instance.SDK.GetContract(ContractAddress);
+    //     var results = await contract.ERC721.Balance();
+    //     if (int.Parse(results) >= 1)
+    //     {
+    //         SceneManager.LoadSceneAsync(2);
+    //     }
+    // }
+    public void BossFightingGame()
     {
-        contractBossFighting = ThirdwebManager.Instance.SDK.GetContract(ContractAddressBossFighting);
-        var results = await contractBossFighting.ERC721.Balance();
-        if (int.Parse(results) >= 1)
-        {
-            SceneManager.LoadSceneAsync(3);
-        }
+        SceneManager.LoadSceneAsync(3);
     }
+    // public async void BossFightingGame()
+    // {
+    //     contractBossFighting = ThirdwebManager.Instance.SDK.GetContract(ContractAddressBossFighting);
+    //     var results = await contractBossFighting.ERC721.Balance();
+    //     if (int.Parse(results) >= 1)
+    //     {
+    //         SceneManager.LoadSceneAsync(3);
+    //     }
+    // }
 
 }

@@ -2044,17 +2044,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'But before you start your adventure, I''ll help you learn the details
-    of this world of Shido.
-
-    Once you understand it, you will have all the skills
-    and information you need to overcome the challenges ahead.
-
-    Click Quiz below
-    when you are ready.
-
-    You must complete 10 questions correctly to get the
-    key to the next Dinosaur world.'
+  m_Text: "   The world of Shido is full of wonders but also many dangers.\r\n  
+    Before starting your journey, you must prepare yourself with knowledge about
+    this world.\r\n   I will help you.\r\n   Study and complete the 10 quizzes below.\r\n  
+    Then you will get the secret book so you can continue."
 --- !u!222 &877813627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2304,23 +2297,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Welcome the Chosen One.
-
-    Welcome to the world of Shido.
-
-    Our world
-    used to be filled with happiness, full of green trees, and people lived happily.
-
-    But
-    then one day a King Kong came. It devastated everything and kidnapped our beautiful
-    princess.
-
-    We have lived in fear and desperation waiting for someone like
-    you.
-
-    Oh Chosen One, please help us save our princess.
-
-    Help our world.'
+  m_Text: "   Welcome to the Ninja world of Shido, the chosen one.\r\n   We have
+    been waiting for someone like you for a long time.\r\n   This world used to have
+    many outstanding Ninjas and we lived together very peacefully and prosperously.\r\n  
+    But then somewhere a giant King Kong appeared.\r\n   It begins to ravage the
+    world, defeating Ninjas and kidnapping princesses.\r\n   She is the symbol of
+    this world.\r\n   Please rescue her. Bring peace to this world."
 --- !u!222 &987628400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2416,19 +2398,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Congratulations on completing the first challenge and gaining valuable
-    knowledge about world of Shido.
-
-    Now begins the dangerous challenge that
-    requires your superior skills.
-
-    To know the princess''s location, you must
-    defeat the T-Rex King.
-
-    Chase with it and complete the challenges it sets.
-
-    When
-    you have reached 50 points. He will give you the key to confront the evil Kong.'
+  m_Text: "   If you want to get to the lair of the giant King Kong, you must pass
+    the forbidden area of \u200B\u200Bthe ferocious king dinosaur.\r\n   Please help
+    him hunt. Then you will get the second secret book to be strong enough to confront
+    the evil King Kong."
 --- !u!222 &1019373893
 CanvasRenderer:
   m_ObjectHideFlags: 0

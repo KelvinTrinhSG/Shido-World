@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/FlappyBird/Scenes/FlappyBird.unity
-    guid: a23e7946c9c953f45a8853ae2cd45e56
+    path: Assets/DinoGame/Scenes/DinoGame.unity
+    guid: 5e767d00a61ef584ab688ff055864db1
   - enabled: 1
     path: Assets/DonkeyKong/Scenes/Level1.unity
     guid: 265a4e25b6025124dbabce88be154826
